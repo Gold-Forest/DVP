@@ -1,2 +1,2 @@
 # DVP
-Django practice, now chapter 2.2
+Django practice, now chapter 2.5
