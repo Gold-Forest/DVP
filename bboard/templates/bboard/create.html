@@ -10,12 +10,12 @@
             <a href="{% url 'index' %}">Головна</a>
             {% for rubric in rubrics %}
             <a href="{% url 'by_rubric' rubric.pk %}">
-                {{ rubric.name}}</a>
-                {% endfor %}
+            {{ rubric.name}}</a>
+            {% endfor %}
         </div>
         <form method="post">
             {% csrf_token %}
-            {{ from.as_p }}
+            {{ form.as_p }}
             <input type="submit" value="Додати">
         </form>
     </body>
